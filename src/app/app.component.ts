@@ -35,6 +35,13 @@ export class AppComponent implements AfterViewInit {
     const w = window.open(`${window.location.origin}/Account/ExternalLogin/Microsoft`, '_blank', 'width=600,height=400');
   }
 
+  openWindowSetLocation() {
+    const w = window.open('', '_blank', 'width=600,height=400');
+    if (w) {
+      w.location = `${window.location.origin}/Account/ExternalLogin/Microsoft`;
+    }
+  }
+
   openWindowUsingAssign() {
     const w = window.open('', '_blank', 'width=600,height=400');
     if (w) {
